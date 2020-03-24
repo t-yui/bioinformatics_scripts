@@ -24,6 +24,13 @@ def argParse():
         type=str,
         required=True
         )
+    parser.add_argument(
+        '-o',
+        '--outdir',
+        dest='outdir',
+        type=str,
+        required=True
+        )
     args = parser.parse_args()
     return args
 
@@ -72,6 +79,7 @@ if __name__ == '__main__':
     # get arguments
     eigenvec = args.eigenvec
     population = args.population
+    outdir = args.outdir
 
     # PATH for data
     eigenvecs_path = eigenvec
@@ -103,5 +111,5 @@ if __name__ == '__main__':
         component_1=component_1,
         component_2=component_2,
         groups=groups,
-        outpath="./"
+        outpath=outdir
     )
