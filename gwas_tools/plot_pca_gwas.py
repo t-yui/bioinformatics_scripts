@@ -29,7 +29,6 @@ def argParse():
 
 
 def plotPCA(component_1, component_2, groups, outpath="./"):
-
     # preparation
     uniq_groups = pd.Series.unique(groups)
     colors = plt.rcParams['axes.prop_cycle'].by_key()['color']
