@@ -6,7 +6,7 @@
 # LAST UPDATE : 2019.05.14
 # DESC : Pipeline for QC and PCA using fam, bim, bed files
 # REQUIREMENT : plink (>= ver. 1.9)
-# USAGE : ./plink_pca_gwas.sh -i ${path_to_data}/${data_nama_without_extension}
+# USAGE : ./plink_pca_gwas.sh -i ${path_to_data}/${data_nama_without_extension} -o ${path_to_output}
 
 
 # params for QC
