@@ -36,6 +36,20 @@ def argParse():
 
 
 def plotPCA(component_1, component_2, groups, outpath="./"):
+    """
+    Plot PCA results of GWAS data, which are processed by plink.
+
+    Parameters
+    ----------
+    component_1 : pandas.Series
+        scores of principal component 1
+    component_2 : pandas.Series
+        scores of principal component 2
+    groups : pandas.Series
+        groups that each individual belongs to
+    outpath : str
+        path to which images are output
+    """
     # preparation
     uniq_groups = pd.Series.unique(groups)
     colors = plt.rcParams['axes.prop_cycle'].by_key()['color']
